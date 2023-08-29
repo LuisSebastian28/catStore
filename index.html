@@ -195,7 +195,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Camisa Elegante para Gato</h5>
                                 <p class="card-text">$29.99</p>
-                                <button class="btn btn-primary">Añadir al carrito</button>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#modal1">Añadir al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -206,7 +206,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Chaqueta de Mezclilla para Gato</h5>
                                 <p class="card-text">$34.99</p>
-                                <button class="btn btn-primary">Añadir al carrito</button>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#modal1">Añadir al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -217,7 +217,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Suéter de Lana para Gato</h5>
                                 <p class="card-text">$27.99</p>
-                                <button class="btn btn-primary">Añadir al carrito</button>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#modal1">Añadir al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -232,7 +232,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Abrigo Elegante para Gato</h5>
                                 <p class="card-text">$39.99</p>
-                                <button class="btn btn-primary">Añadir al carrito</button>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#modal1">Añadir al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -243,7 +243,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Vestido Floral para Gato</h5>
                                 <p class="card-text">$21.99</p>
-                                <button class="btn btn-primary">Añadir al carrito</button>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#modal1">Añadir al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -254,7 +254,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Vestido Floral para Gato</h5>
                                 <p class="card-text">$21.99</p>
-                                <button class="btn btn-primary">Añadir al carrito</button>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#modal1">Añadir al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -265,7 +265,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Vestido Floral para Gato</h5>
                                 <p class="card-text">$21.99</p>
-                                <button class="btn btn-primary">Añadir al carrito</button>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#modal1">Añadir al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -275,7 +275,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Vestido Floral para Gato</h5>
                                 <p class="card-text">$21.99</p>
-                                <button class="btn btn-primary">Añadir al carrito</button>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#modal1">Añadir al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -285,7 +285,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Vestido Floral para Gato</h5>
                                 <p class="card-text">$21.99</p>
-                                <button class="btn btn-primary">Añadir al carrito</button>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#modal1">Añadir al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -309,6 +309,32 @@
             <p>¡Gran venta en ropa para gatos! ¡No te lo pierdas!</p>
         </div>
     </div>
+
+    <!-- Modal compra -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal1Label">COMPRAR</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>PRECIO : 29.98 $</p>
+                    <p>MARCA : EUROPEA</p>
+                    <p>UNIDADES : 4</p>
+                    <p>TALLA/S : M, L, S</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Añadir al carrito</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Comprar ahora</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
