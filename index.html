@@ -6,6 +6,7 @@
     <title>Tienda de Ropa para Gatos</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="img/png" href="./Assets/Portada logo gatos.png">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -14,13 +15,14 @@
         }
 
         .logo img {
-            max-width: 150px;
+          width: 400px;
+          height: 115px;
         }
 
         .slogan {
-            font-size: 32px;
+            font-size: 35px;
             font-weight: bold;
-            margin-top: 10px;
+            margin-top: 5px;
             text-align: center;
             color: #333;
         }
@@ -39,19 +41,71 @@
             border: none;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s;
+            width: 250px; 
+            
         }
-
+        .card img {
+            height: 300px;
+            object-fit: cover; 
+        }
+        
+        
         .card:hover {
             transform: translateY(-5px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
+
+        /* Estilos para la barra de adopción */
+        .barra-adopcion {
+            background-color: yellow;
+            text-align: center;
+            padding: 5px 0; /* Cambiado el padding para reducir la altura */
+        }
+
+        /* Estilos para los anuncios */
+        .anuncio-izquierda,
+        .anuncio-derecha,
+        .anuncio-flotante,
+        .anuncio-afiche {
+            border: 2px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .anuncio-izquierda {
+            float: left;
+            width: 25%;
+        }
+
+        .anuncio-derecha {
+            float: right;
+            width: 25%;
+        }
+
+        .anuncio-flotante {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            transform: translateY(-50%);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .anuncio-afiche {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
     <div class="container mt-3">
         <div class="row align-items-center">
             <div class="col-md-3 logo">
-                <img src="/img/catsi.jpg" alt="Logo de la Empresa" class="img-fluid">
+                <img src="/Assets/New Miau Style.jpg" alt="Logo de la Empresa" class="img-fluid">
             </div>
             <div class="col-md-6 text-center slogan">
                 Lo mejor para tu gato
@@ -87,6 +141,17 @@
         </div>
     </nav>
 
+    <!-- Barra de Adopción -->
+    <div class="barra-adopcion">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>ADOPTE AQUÍ!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container mt-4">
         <div class="row">
             <div class="col-md-3">
@@ -112,13 +177,19 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Anuncio Izquierda -->
+                <div class="anuncio-izquierda">
+                    <h4>Anuncio Izquierda</h4>
+                    <p>¡Descuentos especiales en ropa para gatos!</p>
+                </div>
             </div>
             <div class="col-md-9">
                 <div class="row">
                     <!-- Producto 1 -->
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="img/gato 1.jpg" alt="Producto 1" class="card-img-top">
+                            <img src="Assets/gato1.jpg" alt="Producto 1" class="card-img-top">
                             <div class="card-body">
                                 <h5 class="card-title">Camisa Elegante para Gato</h5>
                                 <p class="card-text">$29.99</p>
@@ -129,7 +200,7 @@
                     <!-- Producto 2 -->
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="img/gato 2.jpg" alt="Producto 2" class="card-img-top">
+                            <img src="Assets/gato2.jpg" alt="Producto 2" class="card-img-top">
                             <div class="card-body">
                                 <h5 class="card-title">Chaqueta de Mezclilla para Gato</h5>
                                 <p class="card-text">$34.99</p>
@@ -140,7 +211,7 @@
                     <!-- Producto 3 -->
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="img/gato 3.jpg" alt="Producto 3" class="card-img-top">
+                            <img src="Assets/gato3.jpg" alt="Producto 3" class="card-img-top">
                             <div class="card-body">
                                 <h5 class="card-title">Suéter de Lana para Gato</h5>
                                 <p class="card-text">$27.99</p>
@@ -151,7 +222,7 @@
                     <!-- Producto 4 -->
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="img/gato 4.jpg" alt="Producto 4" class="card-img-top">
+                            <img src="Assets/gato4.jpg" alt="Producto 4" class="card-img-top">
                             <div class="card-body">
                                 <h5 class="card-title">Abrigo Elegante para Gato</h5>
                                 <p class="card-text">$39.99</p>
@@ -162,7 +233,7 @@
                     <!-- Producto 5 -->
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="img/gato 5.jpg" alt="Producto 5" class="card-img-top">
+                            <img src="Assets/gato5.jpg" alt="Producto 5" class="card-img-top">
                             <div class="card-body">
                                 <h5 class="card-title">Vestido Floral para Gato</h5>
                                 <p class="card-text">$21.99</p>
@@ -173,7 +244,7 @@
                     <!-- Agrega más productos aquí -->
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="img/gato 6.jpg" alt="Producto 5" class="card-img-top">
+                            <img src="Assets/gato6.jpg" alt="Producto 6" class="card-img-top">
                             <div class="card-body">
                                 <h5 class="card-title">Vestido Floral para Gato</h5>
                                 <p class="card-text">$21.99</p>
@@ -183,7 +254,7 @@
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="img/gato 7.jpg" alt="Producto 6" class="card-img-top">
+                            <img src="Assets/gato7.jpg" alt="Producto 7" class="card-img-top">
                             <div class="card-body">
                                 <h5 class="card-title">Vestido Floral para Gato</h5>
                                 <p class="card-text">$21.99</p>
@@ -193,7 +264,7 @@
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="img/gato 8.jpg" alt="Producto 7" class="card-img-top">
+                            <img src="Assets/gato8.jpg" alt="Producto 8" class="card-img-top">
                             <div class="card-body">
                                 <h5 class="card-title">Vestido Floral para Gato</h5>
                                 <p class="card-text">$21.99</p>
@@ -203,7 +274,7 @@
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="img/gato 9/jpg" alt="Producto 8" class="card-img-top">
+                            <img src="Assets/gato9.jpg" alt="Producto 9" class="card-img-top">
                             <div class="card-body">
                                 <h5 class="card-title">Vestido Floral para Gato</h5>
                                 <p class="card-text">$21.99</p>
@@ -212,7 +283,22 @@
                         </div>
                     </div>
                 </div>
+
             </div>
+        </div>
+    </div>
+
+    <!-- Anuncio Flotante -->
+    <div class="anuncio-flotante">
+        <h4>Anuncio Flotante</h4>
+        <p>¡Compra ropa para gatos con descuento!</p>
+    </div>
+
+    <!-- Anuncio Afiche -->
+    <div class="container">
+        <div class="anuncio-afiche">
+            <h4>Anuncio Afiche</h4>
+            <p>¡Gran venta en ropa para gatos! ¡No te lo pierdas!</p>
         </div>
     </div>
 
